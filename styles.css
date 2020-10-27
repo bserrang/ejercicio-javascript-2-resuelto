@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Lato;
+  transition: all 0.3s;
 }
 
 h1 {
@@ -8,6 +9,14 @@ h1 {
 }
 h2 {
   padding-left: 22px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+span {
+  padding: 2px 4px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,.3);
 }
 
 .selected {
@@ -38,4 +47,17 @@ h2 {
 .element-5 {
   color: red;
   background-color: black;
+}
+button {
+  border: none;
+  padding: 2px 4px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+button:disabled {
+  background-color: grey;
+  color: white;
+}
+button:active {
+  background-color: lightsalmon;
 }
